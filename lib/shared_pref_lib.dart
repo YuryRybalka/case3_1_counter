@@ -2,28 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-
-/*
-void main() {
-  runApp(const SharedPrefScreen());
-}
-
-class SharedPrefScreen extends StatelessWidget {
-  const SharedPrefScreen ({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      //title: 'Shared pref демонстрация',
-      home: MyHomePage(),
-    );
-  }
-}*/
-
 class MyHomePage extends StatefulWidget{
   const MyHomePage ({Key? key}): super(key: key);
-
-  //final String title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -61,11 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(' раз', style: Theme.of(context).textTheme.headline4)
           ],
         ),
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Увеличение',
-        child: const Icon(Icons.add),*/
-      );
+    );
   }
 
   //Загрузка стартового значения счетчика
