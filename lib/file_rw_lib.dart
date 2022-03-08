@@ -3,21 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
-
-
-/*
-class FilesDemoScreen extends StatelessWidget {
-  const FilesDemoScreen ({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: FlutterDemo(storage: CounterStorage()),
-    );
-  }
-}
-*/
-
 class CounterStorage {
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();
@@ -106,15 +91,6 @@ class _FlutterDemoState extends State<FlutterDemo> {
             Text(' раз', style: Theme.of(context).textTheme.headline4)
           ],
         ),
-
-      /*floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),*/
-      );
+    );
     }
 }
-/*
-void main() {
-  runApp(const FilesDemoScreen());
-}*/
